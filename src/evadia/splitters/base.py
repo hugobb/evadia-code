@@ -1,8 +1,9 @@
 # splitters/base.py
-from pydantic import BaseModel
 from abc import ABC, abstractmethod
+from dataclasses import dataclass
 
-class SplitterConfigBase(BaseModel):
+@dataclass
+class SplitterConfigBase():
     pass
 
 class Splitter(ABC):
